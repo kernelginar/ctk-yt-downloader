@@ -26,3 +26,8 @@ $ pyinstaller --noconfirm --onedir --windowed --add-data "<customtkinter-directo
 
 ---
 When using py-yt-downloader, the videos and music you download will be saved in the "Current Directory:" location at the bottom of the application. Your "Current Directory:" will be where you run the application.
+
+![image](./images/video.png)
+![image](./images/audio.png)
+![image](./images/download_video.png)
+![image](./images/download_audio.png)
