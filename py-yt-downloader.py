@@ -28,7 +28,6 @@ class YT_Downloader(ctk.CTk):
                 
                 video = video_ytObject.streams.filter(file_extension=video_file_extension_yt).get_highest_resolution()
                 video.download(output_path=os.getcwd(), filename=video_file_name_yt+"."+video_file_extension_yt)
-                video_finish_label.configure(text="Downloaded!")
             except:
                 video_finish_label.configure(text="Failed to download video!")
             video_finish_label.configure(text="Video downloaded!")
@@ -104,8 +103,8 @@ class YT_Downloader(ctk.CTk):
                 audio = audio_ytObject.streams.get_audio_only()
                 audio.download(output_path=os.getcwd(), filename=audio_file_name_yt+"."+audio_file_extension_yt)
             except:
-                audio_finish_label.configure(text="YouTube link is invalid")
-            audio_finish_label.configure(text="Downloaded!")
+                audio_finish_label.configure(text="Failed to download audio!")
+            audio_finish_label.configure(text="Audio downloaded!")
             
         
         # Progress Bar Function
