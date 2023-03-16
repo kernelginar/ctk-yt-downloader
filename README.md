@@ -21,7 +21,7 @@ $ pip show customtkinter
 
 Build from source code:
 ```console
-$ pyinstaller --noconfirm --onedir --windowed --add-data "`customtkinter-directory`:customtkinter/"  "py-yt-downloader.py"
+$ pyinstaller --noconfirm --onedir --windowed --add-data "<customtkinter-directory>/customtkinter:customtkinter/"  "py-yt-downloader.py"
 ```
 
 ---
